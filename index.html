@@ -14,7 +14,7 @@
       <li><a href = "https://example.com/">Главная страница example.com</a></li>
       <li><a href = "ftp://example.com/example.txt">ftp server без авторизации</a></li>
       <li><a href = "ftp://username:password@example.com/example.txt">ftp server с авторизацией</a></li>
-      <li><a href = "http://example.com/#about">Ссылка на фрагмент страницы некоторого сайта</a/></li>
+      <li><a href = "http://example.com/#about">Ссылка на фрагмент страницы некоторого сайта</a></li>
       <li><a href = "#sixth">Ссылка на фрагмент текущей страницы</a></li>
       <li><a href = "https://example.com?par1&par2">Ссылка с двумя параметрами URL</a></li>
       <li>список ссылок основной навигации сайта с подписями title
@@ -28,10 +28,10 @@
       <li><a href = "http://example.com" rel = "nofollow">ссылка, по которой запрещен переход поисковиками</a></li>
       <li><noindex><a href = "http://example.com">Ссылка, запрещенная для индексации поисковиками</a></noindex></li>
       <li>Контекстная <a href = "http://example.com">ссылка</a> имеет смысл сейчас</li>
-      <li><a href = "http://example.com"><img src = "image.jpg" height = "250px" alt="flower"></a></li>
-      <li><img src = "image.jpg" height = "250px" alt="flower" usemap="#map"><map name="map">
-        <area shape = "rect" coords = "25,25,125,125" href = "http://example.com">
-        <area shape = "circle" coords = "200,75,50" href = "http://example.com"></map></li>
+      <li><a href = "http://example.com"><img src = "image.jpg" height = "250" alt="flower"></a></li>
+      <li><img src = "image.jpg" height = "250" alt="flower" usemap="#map"><map name="map">
+        <area shape = "rect" alt = "flower" coords = "25,25,125,125" href = "http://example.com">
+        <area shape = "circle" alt = "" coords = "200,75,50" href = "http://example.com"></map></li>
       <li><a href = "example.html">Ссылка на текущий каталог</a></li>
       <li><a href = "about/example.html">Ссылка на страницу в каталоге about</a></li>
       <li><a href = "../example.html">Ссылка на страницу в каталоге выше текущего</a></li>
@@ -83,7 +83,7 @@
         <label><input type="radio"
           name="limbs" value="" />
           4</label><br />
-      <label>
+      </label>
 
       <label>
         Суперспособности:
@@ -96,7 +96,7 @@
         </select>
       </label><br />
       Биография:<br />
-      <textarea name="biography"></textarea>
+      <textarea name="biography">Напишите о себе</textarea>
     </label><br />
       <label><input type="checkbox" checked="checked"
         name="check-1" />
