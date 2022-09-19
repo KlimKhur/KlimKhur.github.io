@@ -1,0 +1,77 @@
+body {
+    margin: 0 0;
+    background-color: #22313F;
+}
+header {
+    width: 100%;
+    background-color: #67809F;
+    padding: 10px;
+    height: 130px;
+    border-bottom: 4px double black;
+}
+header img {
+        float: left;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+}
+
+h1 {
+    padding: 10px;
+    color: black;
+}
+
+#shap {
+    max-width: 960px;
+    background-color: grey;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: left;
+    border: 2px double brown;
+    border-radius: 10px;
+}
+
+nav {
+    max-width: 960px;
+    background-color: #ABB7B7;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 4px double brown;
+    border-radius: 10px;
+}
+#green {
+    background: lightgrey;
+}
+#yellow {
+    background: white;
+}
+.block {
+    max-width: 960px;
+    background-color: #ABB7B7;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: 4px double brown;
+    border-radius: 10px;
+}
+footer {
+    width: 100%;
+    background-color: #67809F;
+    height: 50px;
+    margin-top: 20px;
+    border-top: 4px double black;
+    text-align:center;
+}
+#podval{
+    display:flex;
+    align-items:center;
+    padding-left:20px;
+}
+.round {
+    border-radius: 100px;
+}
+.imgur_border {
+  border: 1px double black;
+}
