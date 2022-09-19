@@ -41,10 +41,10 @@ nav {
     border: 4px double brown;
     border-radius: 10px;
 }
-#green {
+.green {
     background: lightgrey;
 }
-#yellow {
+.yellow {
     background: white;
 }
 .block {
