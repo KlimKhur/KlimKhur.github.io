@@ -35,6 +35,7 @@ nav {
     max-width: 960px;
     background-color: #ABB7B7;
     margin: 0 auto;
+    display:flex;
     margin-top: 20px;
     padding: 10px;
     text-align: center;
