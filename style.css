@@ -41,6 +41,18 @@ nav {
     border: 4px double brown;
     border-radius: 15px;
 }
+nav a{
+  text-decoration: none;
+  color: white;
+  width: -webkit-fill-available;
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+nav a:hover{
+  background-color: rgba(30,30,30);
+  transition: 0.4s ease;
+}
 .green {
     background: lightgrey;
 }
