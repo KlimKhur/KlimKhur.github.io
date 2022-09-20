@@ -34,10 +34,9 @@ h1 {
 nav {
     max-width: 960px;
     background-color: #ABB7B7;
-    margin: 0 auto;
+    margin: auto;
     display:flex;
     margin-top: 20px;
-    padding: 10px;
     text-align: center;
     border: 4px double brown;
     border-radius: 15px;
