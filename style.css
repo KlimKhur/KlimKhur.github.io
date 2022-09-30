@@ -136,7 +136,7 @@ color:deeppink;
 }
 table{
   display: inline-block;
-  border: 1mm solid white;
+  border: 1mm solid black;
 }
 ol{
 display: inline-block;
@@ -146,7 +146,7 @@ text-align: left;
     padding: 30px;
     text-align: center;
     margin: auto;
-    border: 1mm solid white;
+    border: 1mm solid black;
     margin-bottom: 50px;
     width: fit-content;
   }
