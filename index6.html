@@ -1,77 +1,56 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>6 задание</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="style6.css">
-  <link rel="shortcut icon" type="image/png" href="images/cat_logo.png" >
-  <script type="module" src="script2.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Задание 6</title>
+		<link href="style6.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
 </head>
 <body>
-<main class="m-auto row col-12 col-md-8 p-0">
-  <h1 class="m-auto text-center"></h1>
-  <div class="items-content px-3  d-flex flex-wrap">
-    <div id="content" style="width: 500px; height: 500px;" class="col my-3" >
+	<div class="container h-100" >
+		<div class="row align-items-center h-100">
+			<div class="col-6 mx-auto">
+                <div class="card bg-light h-100 justify-content-center">
+									<div class="text-center">
+<form>
+    <label>
+        <input type="number" class="col" value="0" placeholder="Колличество">
+    </label>
+    <select class="selector">
+        <option class="option option_1" value="1" selected>Стул</option>
+        <option class="option option_2" value="2" >Чайник</option>
+        <option class="option option_3" value="3">Кровать</option>
+    </select>
+    <div class="select_options" style="display: none">
+        <label>
+            <input class="radio" type="radio" name="color" checked value="bron">
+            Бронзовый
+        </label>
+        <label>
+            <input class="radio" type="radio" name="color" value="ser">
+            Серебряный
+        </label>
+        <label>
+            <input class="radio" type="radio" name="color" value="gold">
+            Золотой
+        </label>
     </div>
-    <div class="col-md-6 m-auto">
-    <h2 class="m-auto">Стоимость: <span id="answer"></span></h2>
-    <br>
-    <form action="javascript:void(0);" class="row mx-auto g-3">
-        <div class="">
-            <label for="price" class="form-label">Товар</label>
-            <select class="form-select" id="selectProducts">
-            </select>
-        </div>
-        <div class="">
-            <label for="count" class="form-label">Кол-во товара</label>
-            <!-- <input type="number" class="form-control" min="1" max="100" value="1" id="count" pattern="^\d+$"> -->
-            <input type="text" value="1" class="form-control" id="count" pattern="^\d+$">
-        </div>
-        <div id="radioDiv" style="display: none;" class="mx-auto my-3 row">
-          <div class="form-check py-1">
-            <input class="form-check-input" type="radio" name="radioGroup" id="radio1" value="0" checked>
-            <label class="form-check-label" for="radio1">
-              1 год
-            </label>
-          </div>
-          <div class="form-check py-1">
-            <input class="form-check-input" type="radio" name="radioGroup" id="radio2" value="1">
-            <label class="form-check-label" for="radio2">
-              3 года
-            </label>
-          </div>
-          <div class="form-check py-1">
-            <input class="form-check-input" type="radio" name="radioGroup" id="radio3" value="2">
-            <label class="form-check-label" for="radio3">
-              5 лет
-            </label>
-          </div>
-        </div>
-        <div id="checkboxDiv" class="mx-auto my-3 row">
-          <div class="form-check py-1">
-            <input class="form-check-input" type="checkbox" value="0" id="check1">
-            <label class="form-check-label" for="check1">
-              Label
-            </label>
-          </div>
-          <div class="form-check py-1">
-            <input class="form-check-input" type="checkbox" value="1" id="check2">
-            <label class="form-check-label" for="check2">
-              Label
-            </label>
-          </div>
-          <div class="form-check py-1">
-            <input class="form-check-input" type="checkbox" value="2" id="check3">
-            <label class="form-check-label" for="check3">
-              Label
-            </label>
-          </div>
-        </div>
-    </form>
+    <div class="delivery_check" style="display: none">
+        <label>
+            <input type="checkbox" class="delivery" value="deliver" name="deliver">
+            Доставка
+        </label>
     </div>
-  </div>
-</main>
+
+</form>
+<p>Итоговая стоимость: <span class="price">0</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="script2.js"></script>
 </body>
 </html>
