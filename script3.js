@@ -11,7 +11,6 @@ new Swiper(".image_slider",{
     slidesPerView: 2,
     spaceBetween: 10,
     breakpoints: {
-        // when window width is >= 480px
         480: {
             slidesPerView: 2,
             spaceBetween: 10
@@ -20,7 +19,6 @@ new Swiper(".image_slider",{
             slidesPerView: 4,
             spaceBetween: 15
         },
-        // when window width is >= 640px
         640: {
             slidesPerView: 3,
             spaceBetween: 20
