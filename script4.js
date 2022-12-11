@@ -74,28 +74,3 @@ window.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-form.addEventListener('submit', (e) =>{
-    e.preventDefault()
-
-    const data={
-        name:form.querySelector("[name='name']").value,
-        email:form.querySelector("[name='email']").value,
-        message:form.querySelector("[name='message']").value
-    }
-    form.querySelector("[name='name']").value=''
-    form.querySelector("[name='email']").value=''
-    form.querySelector("[name='message']").value=''
-    localStorage.setItem('name',  form.querySelector("[name='name']").value)
-    localStorage.setItem('email',  form.querySelector("[name='email']").value)
-    localStorage.setItem('message',  form.querySelector("[name='message']").value)
-    form.querySelector('.check_box').checked=false
-    popup.classList.remove("popup_open")
-    fetch("https://formcarry.com/s/aWDb2vTQJ",{
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json;charset=utf-8'
-        },
-        body: JSON.stringify(data)
-    })
-})
-
